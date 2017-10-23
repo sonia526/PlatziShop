@@ -1,0 +1,62 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #ecf0f1;
+}
+
+a:hover {
+  color: #fff;
+}
+
+#header-container,
+#info-container {
+  background-color: #99c84a;
+  color: white;
+}
+
+#menu-container {
+  background-color: #f7f7f9;
+}
+
+.form-control:focus {
+  border-color: #99c84a;
+}
+
+.btn.btn-platzi {
+  background-color: #99c84a;
+  color: white;
+}
+
+.btn.btn-platzi:hover {
+  background-color: #8ab542;
+}
+
+#search-bar {
+  padding: 1em;  
+}
+
+#info-container h4 {
+  text-align: center;
+}
+
+#productsCarousel img {
+  margin: 0 auto;
+}
+
+#footer-container {
+  background-color: #1c3643;
+  color: white;
+  padding: 3em 0;
+}
+
+#footer-container h4 {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #footer-container [class*="col-"] {
+    margin-bottom: 2em;
+  }
+}
