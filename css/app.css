@@ -9,7 +9,14 @@ a {
 a:hover {
   color: #fff;
 }
-
+.logo{
+  height: 80px;
+  left: 80px;
+}
+.imgencarrusel{
+  /*height: 100px;*/
+  width: 100%;
+}
 #header-container,
 #info-container {
   background-color: #99c84a;

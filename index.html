@@ -20,7 +20,9 @@
       <div class="container">
         <div class="row flex-items-xs-middle flex-items-xs-between">
           <div class="col-xs-6">
-            <h1 class="pull-xs-left">PlatziShop</h1>
+            <a class="logo" href="#"><img class="logo" src="images/logo2.png" alt=""></a>
+            <h1 class="pull-xs-left"></h1>
+            <!-- aqui era el logo de platzy shop -->
           </div>
           <div class="col-xs-3">
             <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,21 +107,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img src="images/carousel-image.svg" alt="First slide">
+            <img class="imgencarrusel"src="images/arreglonota.jpg" alt="First slide">
             <div class="carousel-caption">
-              <h3>Primer producto</h3>
-              <p class="hidden-sm-down">Con este producto egestas, nisi a efficitur porttitor, libero nisi viverra arcu, semper accumsan lectus est sit amet diam. Donec eget massa in arcu mattis laoreet id vel libero. Etiam tristique fermentum sem</p>
+              <h3 >Rosas rojas</h3>
+              <p class="hidden-sm-down">flores cada ocacion especial que haran los detalles mas agradables </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carousel-image.svg" alt="Second slide">
+            <img class="imgencarrusel"src="images/rosas.jpg" alt="Second slide">
             <div class="carousel-caption">
               <h3>Segundo producto</h3>
               <p class="hidden-sm-down">Con este producto tempus id porta vel, blandit at ex. Mauris dignissim feugiat quam, vitae blandit metus auctor vitae. Maecenas ut varius ipsum, sed bibendum metus. In tristique a ante ac ornare</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carousel-image.svg" alt="Third slide">
+            <img class="imgencarrusel"src="images/tulirosa.jpg" alt="Third slide">
             <div class="carousel-caption">
               <h3>Tercer producto</h3>
               <p class="hidden-sm-down">Con este producto ut convallis dui. Phasellus id mi aliquam, euismod dolor sit amet, maximus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -163,46 +165,16 @@
     <br><br>
 
     <!-- /Información -->
-
-    <!-- Footer -->
-
-    <div id="footer-container">
-      <div class="container">
-        <div class="row text-xs-center text-sm-left">
-          <div class="col-md-4">
-            <form id="suscribeForm" action="#" method="POST">
-              <h4 class="text-uppercase">¿Quiés recibir todas las novedades?</h4>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="tu@correo.com" name="email">
-                <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie más</small>
-              </div>
-              <button type="submit" class="btn btn-primary form-text">Suscribirme</button>
-            </form>
-          </div>
-          <div class="col-md-3 offset-md-5">
-            <h4 class="navigation">Navegación</h4>
-            <ul class="nav">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- /Footer -->
-    <!-- inicio de carrito -->
     <br><br>
     <div class="container">
         <div class="row">
+          
             <!-- Elementos generados a partir del JSON -->
             <main id="items" class="col-sm-8 row"></main>
+            <img src="images/rosita.jpg">
             <!-- Carrito -->
             <aside class="col-sm-4">
+
                 <h2>Carrito</h2>
                 <!-- Elementos del carrito -->
                 <ul id="carrito" class="list-group"></ul>
@@ -218,22 +190,22 @@
             let baseDeDatos = [
                 {
                     id: 1,
-                    nombre: 'Patata',
+                    nombre: 'Orquideas',
                     precio: 1
                 },
                 {
                     id: 2,
-                    nombre: 'Cebolla',
+                    nombre: 'rosas',
                     precio: 1.2
                 },
                 {
                     id: 3,
-                    nombre: 'Calabacin',
+                    nombre: 'margaritas',
                     precio: 2.1
                 },
                 {
                     id: 4,
-                    nombre: 'Fresas',
+                    nombre: 'claveles',
                     precio: 0.6
                 }
 
@@ -344,6 +316,40 @@
     </script>
     <br><br>
     <!-- fin de carrito -->
+
+    <!-- Footer -->
+
+    <div id="footer-container">
+      <div class="container">
+        <div class="row text-xs-center text-sm-left">
+          <div class="col-md-4">
+            <form id="suscribeForm" action="#" method="POST">
+              <h4 class="text-uppercase">¿Quiés recibir todas las novedades?</h4>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="tu@correo.com" name="email">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie más</small>
+              </div>
+              <button type="submit" class="btn btn-primary form-text">Suscribirme</button>
+            </form>
+          </div>
+          <div class="col-md-3 offset-md-5">
+            <h4 class="navigation">Navegación</h4>
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Footer -->
+    <!-- inicio de carrito -->
+    
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
